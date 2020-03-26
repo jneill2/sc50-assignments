@@ -1,0 +1,65 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 1000px) {
+  div.main, div.footer {
+    margin: 50px;
+  }
+
+  div.main > div {
+    margin-bottom: 75px;
+  }
+}
+@media (max-width: 999px) {
+  div.main, div.footer {
+    margin: 20px;
+  }
+
+  div.main > div {
+    margin-bottom: 50px;
+  }
+}
+h2 {
+  font-size: large;
+  letter-spacing: 2px;
+}
+
+h3 {
+  padding-top: 75px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  color: #666666;
+}
+
+div.main img {
+  width: 100%;
+}
+
+li span {
+  vertical-align: text-bottom;
+  color: lightseagreen;
+}
+li h4 {
+  display: inline-block;
+  font-size: large;
+  margin-left: 0.3em;
+}
+
+li {
+  list-style: none;
+}
+
+li:before {
+  content: "";
+  margin-left: -2em;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
