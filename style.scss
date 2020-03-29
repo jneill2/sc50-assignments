@@ -4,6 +4,7 @@ $secondarycolor: lightseagreen;
 html {
     scroll-behavior: smooth;
 }
+
 @media (min-width:1000px) {
     div.main, div.footer {
         margin: 50px;
@@ -25,6 +26,7 @@ html {
         display: none;
     }
 }
+
 h2 {
     font-size: large;
     letter-spacing: 2px;
@@ -66,8 +68,7 @@ li {
 li {
     list-style: none;
 }
-li:before
-{
+li:before {
     content: '';   
     margin-left: -2em;
 }
