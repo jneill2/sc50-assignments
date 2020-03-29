@@ -20,6 +20,11 @@ html {
     margin-bottom: 50px;
   }
 }
+@media (pointer: none), (pointer: coarse) {
+  #mobile-off {
+    display: none;
+  }
+}
 h2 {
   font-size: large;
   letter-spacing: 2px;
@@ -39,9 +44,16 @@ div.main img {
   width: 100%;
 }
 
-li span {
+li span.custom, li span:not(.custom) {
   vertical-align: text-bottom;
   color: lightseagreen;
+}
+
+li span:not(.custom) {
+  border: 2px lightseagreen solid;
+  border-radius: 5px;
+  font-size: large;
+  vertical-align: sub;
 }
 li h4 {
   display: inline-block;

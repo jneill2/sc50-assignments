@@ -1,5 +1,6 @@
 $themeblue: #2e88fe;
 $secondarycolor: lightseagreen;
+
 html {
     scroll-behavior: smooth;
 }
@@ -19,7 +20,11 @@ html {
         margin-bottom: 50px;
     }
 }
-
+@media (pointer:none), (pointer:coarse) {
+    #mobile-off {
+        display: none;
+    }
+}
 h2 {
     font-size: large;
     letter-spacing: 2px;
@@ -37,11 +42,20 @@ div.main {
         width: 100%;
     }
 }
-
+%list-points {
+    vertical-align: text-bottom;
+    color: $secondarycolor;
+}
 li {
-    span {
-        vertical-align: text-bottom;
-        color: $secondarycolor;
+    span:not(.custom) {
+        @extend %list-points;
+        border: 2px $secondarycolor solid;
+        border-radius: 5px;
+        font-size: large;
+        vertical-align: sub;
+    }
+    span.custom {
+        @extend %list-points;
     }
     h4 {
         display: inline-block;
