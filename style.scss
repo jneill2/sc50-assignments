@@ -18,7 +18,7 @@ html {
         margin: 20px;
     }
     div.main > div {
-        margin-bottom: 0px;
+        margin-bottom: 10px;
     }
 }
 @media (pointer:none), (pointer:coarse) {
@@ -49,14 +49,14 @@ div.main {
     color: $secondarycolor;
 }
 li {
-    span:not(.custom) {
+    span.material-icons:not(.custom) {
         @extend %list-points;
         border: 2px $secondarycolor solid;
         border-radius: 5px;
         font-size: large;
         vertical-align: sub;
     }
-    span.custom {
+    span.material-icons.custom {
         @extend %list-points;
     }
     h4 {
@@ -68,7 +68,7 @@ li {
 li {
     list-style: none;
 }
-li:before {
+li::before {
     content: '';   
     margin-left: -2em;
 }

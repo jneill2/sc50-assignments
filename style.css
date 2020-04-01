@@ -17,7 +17,7 @@ html {
   }
 
   div.main > div {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
 }
 @media (pointer: none), (pointer: coarse) {
@@ -44,12 +44,12 @@ div.main img {
   width: 100%;
 }
 
-li span.custom, li span:not(.custom) {
+li span.material-icons.custom, li span.material-icons:not(.custom) {
   vertical-align: text-bottom;
   color: lightseagreen;
 }
 
-li span:not(.custom) {
+li span.material-icons:not(.custom) {
   border: 2px lightseagreen solid;
   border-radius: 5px;
   font-size: large;
@@ -65,7 +65,7 @@ li {
   list-style: none;
 }
 
-li:before {
+li::before {
   content: "";
   margin-left: -2em;
 }
